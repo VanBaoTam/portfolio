@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
-import { Grid } from "@/components/mui";
+import { Box, Grid } from "@/components/mui";
 import { COLORS } from "@/constants";
 import AsideBar from "@/components/layout/aside-bar";
+import NavigationBar from "@/components/layout/navigation-bar";
+import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,9 +36,13 @@ export default function RootLayout({
           <Grid size={3}>
             <AsideBar />
           </Grid>
-          <Grid size={9} sx={{ p: 4 }}>
-            {children}
+          <Grid size={9}>
+            <NavigationBar />
+            <Box sx={{ p: 2 }}>{children}</Box>
           </Grid>
+        </Grid>
+        <Grid container>
+          <Footer />
         </Grid>
       </body>
     </html>

@@ -17,10 +17,11 @@ function Header() {
           py: "1px",
           textAlign: "center",
           width: "40%",
+
           borderRadius: 2,
         }}
       >
-        <Typography> Van Bao Tam - Portfolio</Typography>
+        <Typography fontSize={"0.875rem"}> Van Bao Tam - Portfolio</Typography>
       </Box>
     </Box>
   );
