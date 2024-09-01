@@ -1,5 +1,5 @@
 import { Box } from '@/components/mui';
-import { ICON_BAR } from '@/constants/icons';
+import { ICON_BAR } from '@/constants/common';
 import Image from 'next/image';
 import styles from './icon.module.css';
 
