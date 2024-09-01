@@ -1,0 +1,17 @@
+.icon_bar__icon--normal {
+  fill: #284053;
+  padding: 8px 8px 12px 2px;
+  margin-right: 12px;
+  font-size: 80px;
+  filter: invert(0.9);
+}
+.icon_bar__icon--active {
+  color: #617e96;
+  border-left: 2px solid #617e96;
+}
+.file_bar__icon--normal {
+  color: #284053;
+  padding: 8px 8px 12px 2px;
+  font-size: 80px;
+  filter: invert(1);
+}
