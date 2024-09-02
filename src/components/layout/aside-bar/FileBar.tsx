@@ -8,7 +8,7 @@ import styles from './icon.module.css';
 function FileBar() {
   const [isShown, setIsShown] = useState<boolean>(true);
   return (
-    <Box sx={{ py: 2, width: '100%' }}>
+    <Box sx={{ width: '100%' }}>
       <Box>
         <Stack alignItems="center" direction="row">
           {isShown ? (

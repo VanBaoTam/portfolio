@@ -6,8 +6,8 @@ export const ICON_BAR = [
 ];
 
 export const FILES = [
-  { id: 1, name: 'profile' },
-  { id: 2, name: 'contact' },
-  { id: 3, name: 'about' },
-  { id: 4, name: 'projects' },
+  { id: 1, icon: 'html.svg', name: 'profile.html' },
+  { id: 2, icon: 'git.svg', name: 'contact.git' },
+  { id: 3, icon: 'readme.svg', name: 'about.md' },
+  { id: 4, icon: 'json.svg', name: 'projects.json' },
 ];
