@@ -11,7 +11,7 @@ const ActiveFileContext = createContext<ActiveFileContextProps | undefined>(
 );
 
 export const ActiveFileProvider = ({ children }: { children: ReactNode }) => {
-  const [activeFileName, setActiveFileName] = useState<string>('');
+  const [activeFileName, setActiveFileName] = useState<string>('/');
 
   return (
     <ActiveFileContext.Provider value={{ activeFileName, setActiveFileName }}>

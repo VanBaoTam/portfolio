@@ -2,6 +2,7 @@ export const COLORS = {
   BACKGROUND: {
     MAIN: '#021626',
     SECONDARY: '#020e19',
+    ACTIVE: '#0e2941',
     HEADER: '#0f2231',
   },
   TYPOGRAPHY: {

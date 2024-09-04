@@ -1,6 +1,6 @@
-import { Grid } from "@/components/mui";
-import IconBar from "./IconBar";
-import FileBar from "./FileBar";
+import { Grid } from '@/components/mui';
+import FileBar from './FileBar';
+import IconBar from './IconBar';
 
 function AsideBar() {
   return (
@@ -8,7 +8,7 @@ function AsideBar() {
       <Grid size={3}>
         <IconBar />
       </Grid>
-      <Grid size={8}>
+      <Grid size={9} sx={{ flexGrow: 1 }}>
         <FileBar />
       </Grid>
     </Grid>
