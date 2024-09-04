@@ -4,6 +4,16 @@ export const ICON_BAR = [
   { id: 3, name: 'github.svg' },
   { id: 4, name: 'source-control.svg' },
 ];
+export const MENU_BAR = [
+  'File',
+  'Edit',
+  'Selection',
+  'View',
+  'Go',
+  'Run',
+  'Terminal',
+  'Help',
+];
 
 export const FILES = [
   { id: 1, icon: 'html.svg', name: 'profile.html', file: '/' },

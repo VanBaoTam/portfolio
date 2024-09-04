@@ -41,7 +41,7 @@ function FileBar() {
           </Typography>
         </Stack>
       </Box>
-      {isShown && <Files />}
+      <Files isShown={isShown} />
     </Box>
   );
 }
