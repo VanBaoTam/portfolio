@@ -12,10 +12,9 @@ const quickSand = Quicksand({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['vietnamese', 'latin'],
 });
-console.log([quickSand.style.fontFamily, beVNPro.style.fontFamily].join(', '));
 const theme = createTheme({
   typography: {
-    fontFamily: [quickSand.style.fontFamily, beVNPro.style.fontFamily].join(
+    fontFamily: [beVNPro.style.fontFamily, quickSand.style.fontFamily].join(
       ', ',
     ),
     button: {
