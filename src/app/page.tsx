@@ -9,7 +9,8 @@ export default function Home() {
           Văn Bảo Tâm.
         </Typography>
         <Typography fontWeight={700}>
-          A Front-end Web Developer With a passion in Learning and Growthing.
+          A Front-end Web Developer with a strong passion for continuous
+          learning and growth.
         </Typography>
       </Box>
     </main>
