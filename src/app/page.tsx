@@ -1,14 +1,15 @@
+import AnimationText from '@/components/common/AnimationText';
 import { Box, Typography } from '@mui/material';
 
 export default function Home() {
   return (
     <main>
-      <Box sx={{}}>
-        <Typography fontWeight={700}>Xin chào, My name is</Typography>
-        <Typography fontWeight={700} fontFamily={'__Be_Vietnam_Pro_4d2bfa'}>
-          Văn Bảo Tâm.
+      <Box sx={{ pt: 10 }}>
+        <Typography fontWeight={700} fontSize={24}>
+          Xin chào, My name is
         </Typography>
-        <Typography fontWeight={700}>
+        <AnimationText text="Văn Bảo Tâm" />
+        <Typography fontSize={20} fontWeight={700}>
           A Front-end Web Developer with a strong passion for continuous
           learning and growth.
         </Typography>

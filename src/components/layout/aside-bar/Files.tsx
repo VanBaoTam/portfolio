@@ -9,7 +9,6 @@ function Files(props: { isShown: boolean }) {
   const { isShown } = props ?? {};
   const pathname = usePathname();
   const router = useRouter();
-  console.log(isShown);
 
   return (
     <Box
