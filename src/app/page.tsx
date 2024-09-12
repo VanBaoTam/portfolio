@@ -1,18 +1,40 @@
+'use client';
 import AnimationText from '@/components/common/AnimationText';
-import { Box, Typography } from '@mui/material';
+import { IProfile } from '@/types';
+import { Box } from '@mui/material';
+import { useState } from 'react';
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState<IProfile>({
+    greeting: false,
+    name: false,
+    role: false,
+  });
   return (
     <main>
       <Box sx={{ pt: 10 }}>
-        <Typography fontWeight={700} fontSize={24}>
-          Xin chào, My name is
-        </Typography>
-        <AnimationText text="Văn Bảo Tâm" />
-        <Typography fontSize={20} fontWeight={700}>
-          A Front-end Web Developer with a strong passion for continuous
-          learning and growth.
-        </Typography>
+        <AnimationText
+          text="Xin chào, My name is"
+          fontSize={24}
+          flag={'greeting'}
+          setIsMounted={setIsMounted}
+        />
+        {isMounted?.greeting && (
+          <AnimationText
+            text="Văn Bảo Tâm"
+            fontSize={70}
+            flag={'name'}
+            setIsMounted={setIsMounted}
+          />
+        )}
+        {isMounted?.name && (
+          <AnimationText
+            text="Front-end Web Developer - Passionate Learner"
+            fontSize={20}
+            flag={'role'}
+            setIsMounted={setIsMounted}
+          />
+        )}
       </Box>
     </main>
   );
