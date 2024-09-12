@@ -14,8 +14,9 @@ function AnimationText(props: {
   fontSize: number;
   flag: string;
   setIsMounted: Dispatch<SetStateAction<IProfile>>;
+  delay: number;
 }) {
-  const { text, fontSize = 20, flag, setIsMounted } = props;
+  const { text, fontSize = 20, flag, setIsMounted, delay = 80 } = props;
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
@@ -24,14 +25,14 @@ function AnimationText(props: {
       const timeout = setTimeout(() => {
         setCurrentText((prevText) => prevText + text[currentIndex]);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 80);
+      }, delay);
 
       return () => clearTimeout(timeout);
     } else {
       setIsMounted((prev) => ({ ...prev, [flag]: true }));
       setIsTyping(false);
     }
-  }, [currentIndex, flag, setIsMounted, text]);
+  }, [currentIndex, delay, flag, setIsMounted, text]);
 
   return (
     <Typography
